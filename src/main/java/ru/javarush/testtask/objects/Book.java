@@ -4,6 +4,7 @@ public class Book {
     private long id;
     private String title;
     private String description;
+    private String author;
     private String isbn;
     private Integer printYear;
     private boolean readAlready;
@@ -11,10 +12,11 @@ public class Book {
     public Book() {
     }
 
-    public Book(long id, String title, String description, String isbn, Integer printYear, boolean readAlready) {
+    public Book(long id, String title, String description, String author, String isbn, Integer printYear, boolean readAlready) {
         this.id = id;
         this.title = title;
         this.description = description;
+        this.author = author;
         this.isbn = isbn;
         this.printYear = printYear;
         this.readAlready = readAlready;
@@ -30,6 +32,10 @@ public class Book {
 
     public String getDescription() {
         return description;
+    }
+
+    public String getAuthor() {
+        return author;
     }
 
     public String getIsbn() {
@@ -55,6 +61,10 @@ public class Book {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public void setIsbn(String isbn) {
