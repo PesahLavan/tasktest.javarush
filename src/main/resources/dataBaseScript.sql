@@ -2,11 +2,11 @@ USE test;
     DROP TABLE IF EXISTS book;
 CREATE TABLE book(
  id INT(11) NOT NULL AUTO_INCREMENT,
- title VARCHAR(100),
- description VARCHAR(255),
- author VARCHAR(100),
- isbn VARCHAR(20),
- printYear INT,
+ title VARCHAR(100) NOT NULL,
+ description VARCHAR(255) NOT NULL,
+ author VARCHAR(100) NOT NULL,
+ isbn VARCHAR(20) NOT NULL,
+ printYear INT NOT NULL,
  readAlready BOOLEAN DEFAULT FALSE,
   PRIMARY KEY  (id)
 )
